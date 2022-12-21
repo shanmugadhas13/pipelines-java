@@ -8,6 +8,8 @@ trigger:
 
 pool:
   name: test
+  demands:
+   - agent.name -equals agent1
 
 steps:
 - task: Maven@3
